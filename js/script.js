@@ -164,7 +164,7 @@ const checkCollision = () => {
         return index < neckIndex && position.x == head.x && position.y == head.y
     })
 
-    if (wallCollision || selfCollision) {
+    if (wallCollision || selfCollision) {   
         gameOver()
     } 
 }
@@ -172,6 +172,7 @@ const checkCollision = () => {
 const gameOver = () => {
     direction = undefined
 
+       
     menu.style.display = "flex"
     finalScore.innerText = score.innerText
     canvas.style.filter = "blur(4px)"
@@ -205,19 +206,19 @@ gameLoop()
 document.addEventListener("keydown", ({ key }) => {
     if (!checkGameOver) return
 
-    if (key == "ArrowRight" || key == "d" && direction != "left") {
+    if (key == "ArrowRight" && direction != "left" || key == "d" && direction != "left") {
         direction = "right"
     }
 
-    if (key == "ArrowLeft" || key == "a" && direction != "right") {
+    if (key == "ArrowLeft" && direction != "right" || key == "a" && direction != "right") {
         direction = "left"
     }
 
-    if (key == "ArrowDown" || key == "s" && direction != "up") {
+    if (key == "ArrowDown" && direction != "up" || key == "s" && direction != "up") {
         direction = "down"
     }
 
-    if (key == "ArrowUp" || key == "w" && direction != "down") {
+    if (key == "ArrowUp" && direction != "down" || key == "w" && direction != "down") {
         direction = "up"
     }
 })

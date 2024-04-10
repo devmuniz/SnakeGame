@@ -107,6 +107,12 @@ canvas {
     background: transparent;
     border-color: #333;
     color: white;
+    background: transparent;
+    border: none;
+  }
+
+  .material-symbols-outlined {
+    font-size: 40px;
   }
 
   
@@ -130,6 +136,7 @@ canvas {
       .up-btn, .down-btn, .left-btn, .right-btn {
         background: transparent;
         border: none;
+        color: rgba(255, 255, 255, 0.7);
       }
 }
 
