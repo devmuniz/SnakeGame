@@ -175,6 +175,10 @@ const gameOver = () => {
     menu.style.display = "flex"
     finalScore.innerText = score.innerText
     canvas.style.filter = "blur(4px)"
+    upBtn.style.filter = "blur(4px)"
+    downBtn.style.filter = "blur(4px)"
+    leftBtn.style.filter = "blur(4px)"
+    rightBtn.style.filter = "blur(4px)"
     checkGameOver = false
     
 
@@ -217,9 +221,6 @@ document.addEventListener("keydown", ({ key }) => {
         direction = "up"
     }
 })
-
-
-
 
 upBtn.addEventListener("click", () => {
     if (direction != "down") {
