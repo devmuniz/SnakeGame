@@ -71,16 +71,6 @@ canvas {
     gap: 5px;
     cursor: pointer;
 }
-
-
-@media screen and (max-width: 320px) {
-    canvas {
-      width: 290px;
-    }
-    
-  }
-
-
   /********************
   Buttons*/
   
@@ -112,14 +102,67 @@ canvas {
 
   .up-btn, .down-btn, .left-btn, .right-btn {
     border-radius: 20px;
-    background-color: #191919;
+    background: transparent;
     border-color: #333;
     color: white;
   }
 
   
+/***********MEDIA */
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    canvas {
+        width: 290px;
+      } 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    canvas {
+        width: 500px;
+      } 
+      .score--vallue {
+          font-size: 3.7rem;
+      }
+
+      .up-btn, .down-btn, .left-btn, .right-btn {
+        background: transparent;
+        border: none;
+      }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    canvas {
+        width: 500px;
+      } 
+      .score--vallue {
+          font-size: 3.7rem;
+      }
+      .up-btn, .down-btn, .left-btn, .right-btn {
+        background: transparent;
+        border: none;
+      }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    canvas {
+        width: 500px;
+      } 
+      .score--vallue {
+          font-size: 4.5rem;
+      }
+      .up-btn, .down-btn, .left-btn, .right-btn {
+        background: transparent;
+        border: none;
+      }
+}
 
 
-
+    
+   
+    
+  
 
 
