@@ -163,8 +163,7 @@ canvas {
           font-size: 4.5rem;
       }
       .up-btn, .down-btn, .left-btn, .right-btn {
-        background: transparent;
-        border: none;
+        display: none;
       }
 }
 
